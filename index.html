@@ -1,94 +1,237 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Dodzi's Portfolio</title>
 </head>
 <body>
-    <header>
-        <div class="top">
-            <div class="picture">
-                <img src="IMG_20220725_090723_181 (4).jpg" alt="Profile Picture">
-            </div>
-            <div class="about">
-                <h1>About Me</h1>
-                <p>Hi, My name is Dodzi Gyamposu, A Computer Science Kibo and a Software Engineering Student at ALX, I'm a Tech addict and building myself to Achieve greater things though Tech. I love to watch movies and read books during my leisure time specifically fantasy and tech-related,i do not have a favourite, i enjoy whatever tastes good.......</p>
-            <p>Nice To Meet You</p>
-            </div>
+    <div class="header">
+        <div class="logo">
+            DODZI
         </div>
         <nav>
-            <ul class="menu">
-
-                <li><a href="#education">Education</a></li>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="education">
-            <h2>Education</h2>
-            <div class="heyy">
-            <div class="school">
-                <p>
-                    <h2>
-                        Kibo School Of Technology
-                    </h2>
-                    september 2022 - Present
-                    Bsc Computer Science
-                </p>
+            <div class="bar">
+                <i class="open fa-solid fa-bars"></i>
+                <i class="close fa-solid fa-xmark"></i>
             </div>
-            <div class="school">
-                <p>
-                    <h2>
-                        ALX
-                    </h2>
-                    December 2022 - Present
-                    Software Engineering
-                </p>
+        </nav>
+    </div>
+    <div class="main">
+        <div class="home" id="home">
+            <div class="left text">
+                <span>Hi There, I'm</span><br>
+                <h1>Gyamposu Dodzi</h1>
+                <h3>I am a <span class="typing1"></span></h3>
+                <div class="buttons">
+                    <button class="btn"><a href="#contact">Get in Touch</a></button>
+                </div>
+            </div>
+            <div class="image">
+                <img src= "ydrd_014715.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="about" id="about">
+            <div class="title aboutTxt">
+                <span>Know me</span>
+            </div>
+            <div class="container">
+                <div class="img">
+                    <img src="ydrd_014715.jpg" alt="">
+                </div>
+                <div class="aboutText">
+                    <h2>Hi There, I'm Dodzi <span class="typing2"></span></h2>
+                    <p>Curiosity on my path is what has led me here, Tech has always been apart of me and making greater impact through tech has been my greatest dream </p>
+            <div class="buttons">
+                <a href="https://docs.google.com/document/d/1DjBc6XDIpY897OZrzQ0-GpAVjXP3lTX4iSS6STWkOdo/edit?usp=sharing" target="_blank">
+        <button class="btn">Resume</button>
+                </a>
+            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="projects" id="projects">
+            <div class="projectsTxt title">
+                <span>Projects</span>
+            </div>
+            <div class="projectsBox">
+                <div class="box">
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+                        <div>
+                            <div class="text"><a href="https://example.com/campuscare365">CampusMate</a></div>
+                            <p>Introducing our chat bot Kwamina, designed specifically to help students! Powered by the ChatGPT API, our bot is here to assist you with any questions you may have related to your studies. With a user-friendly interface and natural language processing capabilities, our bot is easy to use and understands your queries in a conversational manner.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="box">
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fa-solid fa-school"></i>
+                        </div>
+                        <div>
+                            <div class="text"><a href="https://example.com/campuscare365">CampusCare365</a></div>
+                            <p>CampusCare365 is an innovative new app designed to help university students prioritize their physical, emotional, and social health.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="box">
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <div>
+                            <div class="text"><a href="https://example.com/campuscare365">Quiz App</a></div>
+                            <p>Test your knowledge with our general knowledge quiz app! Explore a variety of topics, from history to science. Earn points for correct answers. Challenge yourself and expand your knowledge with our quiz app!</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="skills" id="skills">
+            <div class="title"><span>Skills</span></div>
+            <div class="skillBox">
+                <div class="left">
+                    <div class="text">
+                        My Skills
+                    </div>
+                    <p>Building upon what you have is what makes you better and tech is no exception,although still learning i'm eager to gain more in addition to what i have right now</p>
+                </div>
+                <div class="right">
+                    <div class="progress html">
+                        <div class="info">
+                            <span>HTML</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="range"></div>
+                    </div>
+                    <div class="progress css">
+                        <div class="info">
+                            <span>CSS</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="range"></div>
+                    </div>
+                    <div class="progress js">
+                        <div class="info">
+                            <span>JavaScript</span>
+                            <span>35%</span>
+                        </div>
+                        <div class="range"></div>
+                    </div>
+                    <div class="progress python">
+                        <div class="info">
+                            <span>Python</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="range"></div>
+                    </div>
+                    <div class="progress flask">
+                        <div class="info">
+                            <span>Flask</span>
+                            <span>67%</span>
+                        </div>
+                        <div class="range"></div>
+                    </div>
+                    
+                        <div class="range"></div>
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="contact" id="contact">
+            <div class="title">
+                <span>Contact Me</span>
+            </div>
+            <div class="contactBox">
+                <div class="left">
+                    <span>Message Me</span>
+                    <form action="mailto:prince.fia-donkor@kibo.school" method="post" enctype="text/plain">
+                        <div class="genInfo">
+                            <input type="text" placeholder="Name" class="name">
+                            <input type="email" placeholder="Email" class="email">
+                        </div>
+                        <div class="subject">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                        <div class="message">
+                            <textarea name="message" rows="8" placeholder="Message" required></textarea>
+                        </div>
+                        <div>
+                            <button class="btn">Message me</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="right">
+                    <span>Get in Touch</span>
+                    <p>I'm Glad that you checked out my portfolio, Hope you consider me for greater opportunities and would be glad to hear from you soon</p>
+                    <div class="infoBox name">
+                        <i class="fa-solid fa-user"></i>
+                        <div class="user">
+                            <div>Name</div>
+                            <div>Gyamposu Dodzi</div>
+                        </div>
+                    </div>
+                    <div class="infoBox email">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div class="user">
+                            <div>Email</div>
+                            <div>gyamposu@gmail.com</div>
+                            <div>dodzi.gyamposu@kibo.school</div>
+                            <div>gyamposu@yahoo.com</div>
+                        </div>
+                    </div>
+                    <div class="infoBox address">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div class="user">
+                            <div>Address</div>
+                            <div>Accra, Ghana</div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
-            <div class="school">
-                <p>
-                    <h2>Manya Krobo senior high School</h2>
-                    September 2017-2020
-                </p>   
-            </div>
-            </div>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="proj">
-            <div class="pro"><h2>CampusCare365</h2></div>
-            <div class="pro"><h2>CampusMate-Kwamina</h2></div>
-            <div class="pro"><h2>Student Info-Manager</h2></div>
-            
-            </div>
-        </section>
-        <section id="skills">
-            <h2>Skills</h2>
-            <div>
-                <div>Python</div>
-                <div></div>
-                <div>Html</div>
-                <div></div>
-                <div>Css</div>
-                <div></div>
-                <div>Javascript</div>
-                <div></div>
-                <div>C programming Language</div>
-                <div></div>
-                <div>Database Management Systems</div>
-                <div></div>
-            </div>
-        </section>
-        
-    </main>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum cursus ligula sed sem tristique, in mattis urna consectetur. Integer varius massa ut consectetur euismod.</p>
-    </section>
+        </div>
+    
+    <div class="footer">
+        <div class="copy">
+            Copyright &copy; Dodzi
+        </div>
+<div class="socialIcons">
+    <a href="https://www.linkedin.com/in/dodzi-gyamposu-a26822237/"><i class="fa-brands fa-square-linkedin"></i></a>
+    <a href="https://web.facebook.com/david.mcbrown.16"><i class="fa-brands fa-facebook-square"></i></a>
+    <a href="https://twitter.com/gyamposu_dodzi"><i class="fa-brands fa-square-twitter"></i></a>
+    <a href="https://github.com/gyamposudodzi"><i class="fa-brands fa-square-github"></i></a>
+    <a href="https://wa.me/233240246122"><i class="fa-brands fa-square-whatsapp"></i></a>
+</div>
+
+    <div class="topBtn">
+        <a href="#"><i class="fa-solid fa-angle-up"></i></a>
+    </div>
+</div>    
+
+
+    <script src="scroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="index.js"></script>
 </body>
 </html>
