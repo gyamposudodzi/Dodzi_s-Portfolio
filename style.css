@@ -19,7 +19,7 @@ body {
     background-repeat: repeat;
     background-size: auto;
     overflow-y: overlay;
-    color: #fff;
+    color: whitesmoke;
     overflow-x: hidden;
 }
 
@@ -227,7 +227,7 @@ text-decoration: none; /* Adds underline on hover */
 }
 
 #about .title span {
-    background: #ffffff;
+    background: #1a1919;
 }
 
 .title:before {
