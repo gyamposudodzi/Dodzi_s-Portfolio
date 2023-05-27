@@ -142,6 +142,7 @@ nav ul li:hover a {
     font-size: 35px;
     letter-spacing: 1px;
     padding-left: 5px;
+    color: #000;
 }
 
 .home .text h3 span {
