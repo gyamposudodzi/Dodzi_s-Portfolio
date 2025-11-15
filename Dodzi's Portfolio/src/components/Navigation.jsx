@@ -5,7 +5,7 @@ const Navigation = ({ pages, currentPage, navigateToPage }) => {
   return (
     <nav className="nav-container">
       <div className="logo">
-        <span className="logo-text">NEXUS</span>
+        <span className="logo-text">DODZi</span>
         <div className="logo-dot"></div>
       </div>
       

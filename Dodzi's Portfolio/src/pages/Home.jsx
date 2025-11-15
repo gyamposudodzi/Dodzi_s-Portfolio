@@ -6,12 +6,12 @@ const Home = ({ navigateToPage }) => {
     <div className="home-content">
       <div className="hero-glow"></div>
       <h1 className="hero-title">
-        <span className="title-line">INNOVATE</span>
         <span className="title-line">DESIGN</span>
         <span className="title-line">CREATE</span>
+        <span className="title-line">AUTOMATE</span>
       </h1>
       <p className="hero-subtitle">
-        Building the future, one pixel at a time
+        Building the future, one automation at a time ( This is cringe🤮 i know, but i have to...please be impressed!!!!! )
       </p>
       <div className="hero-cta">
         <button className="cta-button" onClick={() => navigateToPage(2)}>
@@ -24,9 +24,9 @@ const Home = ({ navigateToPage }) => {
       </div>
       
       <div className="tech-stack">
-        <div className="tech-item">REACT</div>
-        <div className="tech-item">THREE.JS</div>
-        <div className="tech-item">WEBGL</div>
+        <div className="tech-item">PYTHON</div>
+        <div className="tech-item">JAVASCRIPT</div>
+        <div className="tech-item">POSTGRESQL</div>
         <div className="tech-item">AI/ML</div>
       </div>
     </div>
