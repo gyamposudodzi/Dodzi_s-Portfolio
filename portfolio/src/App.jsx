@@ -1,5 +1,6 @@
-// src/App.jsx
-import React, { useState, useEffect } from 'react';
+// In your App.jsx, replace the useEffect and add navigation arrows:
+
+import React, { useState } from 'react';
 import './App.css';
 
 // Components
@@ -36,22 +37,19 @@ const App = () => {
     }, 800);
   };
 
-  useEffect(() => {
-    const handleWheel = (e) => {
-      if (isAnimating) return;
-      
-      if (e.deltaY > 0 && currentPage < pages.length - 1) {
-        navigateToPage(currentPage + 1);
-      } else if (e.deltaY < 0 && currentPage > 0) {
-        navigateToPage(currentPage - 1);
-      }
-    };
+  const goToNextPage = () => {
+    if (currentPage < pages.length - 1) {
+      navigateToPage(currentPage + 1);
+    }
+  };
 
-    window.addEventListener('wheel', handleWheel);
-    return () => window.removeEventListener('wheel', handleWheel);
-  }, [currentPage, isAnimating]);
+  const goToPrevPage = () => {
+    if (currentPage > 0) {
+      navigateToPage(currentPage - 1);
+    }
+  };
 
-  const CurrentPageComponent = pages[currentPage].component;
+  // REMOVE the wheel navigation useEffect entirely
 
   return (
     <div className="app">
@@ -63,21 +61,44 @@ const App = () => {
         navigateToPage={navigateToPage}
       />
       
-      <div 
-        className="container"
-        style={{ transform: `translateX(-${currentPage * 100}vw)` }}
-      >
-        {pages.map((page, index) => {
-          const PageComponent = page.component;
-          return (
-            <section 
-              key={page.id} 
-              className={`page ${page.id}-page`}
+      <div className="main-content">
+        <div 
+          className="container"
+          style={{ transform: `translateX(-${currentPage * 100}vw)` }}
+        >
+          {pages.map((page, index) => {
+            const PageComponent = page.component;
+            return (
+              <section 
+                key={page.id} 
+                className={`page ${page.id}-page`}
+              >
+                <PageComponent navigateToPage={navigateToPage} />
+              </section>
+            );
+          })}
+        </div>
+
+        {/* Navigation Arrows */}
+        // In your App.jsx, update the navigation arrows section:
+
+          {/* Navigation Arrows - Side Position */}
+          <div className="page-navigation-arrows side-arrows">
+            <button 
+              className={`nav-arrow prev side-arrow ${currentPage === 0 ? 'disabled' : ''}`}
+              onClick={goToPrevPage}
+              disabled={currentPage === 0}
             >
-              <PageComponent navigateToPage={navigateToPage} />
-            </section>
-          );
-        })}
+              ‹
+            </button>
+            <button 
+              className={`nav-arrow next side-arrow ${currentPage === pages.length - 1 ? 'disabled' : ''}`}
+              onClick={goToNextPage}
+              disabled={currentPage === pages.length - 1}
+            >
+              ›
+            </button>
+          </div>
       </div>
 
       <PageIndicator 

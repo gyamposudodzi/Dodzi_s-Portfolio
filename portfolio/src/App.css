@@ -39,8 +39,6 @@ body {
   z-index: -1;
 }
 
-
-
 .grid-lines {
   position: absolute;
   width: 100%;
@@ -123,13 +121,15 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 2rem;
+  padding: 1.5rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 100;
-  background: rgba(10, 10, 20, 0.8);
-  backdrop-filter: blur(10px);
+  z-index: 1000;
+  background: rgba(10, 10, 20, 0.95);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(0, 243, 255, 0.1);
+  height: 80px;
 }
 
 .logo {
@@ -195,33 +195,80 @@ body {
   width: 100%;
 }
 
-/* Container and Pages */
+/* Main Content Layout */
+.main-content {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 80px;
+  overflow: hidden;
+}
+
 .container {
   display: flex;
   width: 400vw;
-  height: 100vh;
+  height: calc(100vh - 80px);
   transition: transform 0.8s cubic-bezier(0.65, 0, 0.35, 1);
 }
 
+/* Page Layout - Full width with right-aligned scrollbar */
 .page {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   padding: 2rem;
+  padding-top: 3rem;
+  padding-right: calc(2rem - 8px); /* Compensate for scrollbar width */
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+/* Custom Scrollbar Styles */
+.page::-webkit-scrollbar {
+  width: 8px;
+}
+
+.page::-webkit-scrollbar-track {
+  background: rgba(10, 10, 20, 0.8);
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+.page::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--primary), var(--secondary));
+  border-radius: 4px;
+  border: 1px solid rgba(0, 243, 255, 0.3);
+}
+
+.page::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, var(--accent), var(--primary));
+  box-shadow: 0 0 10px var(--primary);
+}
+
+/* Firefox Scrollbar */
+.page {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary) rgba(10, 10, 20, 0.8);
 }
 
 /* Home Page Styles */
 .home-page {
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+  align-items: center;
 }
 
-.home-content {
+.home-page .home-content {
   position: relative;
   z-index: 2;
+  text-align: center;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .hero-glow {
@@ -260,6 +307,7 @@ body {
   font-size: 1.2rem;
   color: var(--text-secondary);
   margin-bottom: 2rem;
+  max-width: 600px;
 }
 
 .hero-cta {
@@ -307,7 +355,8 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .tech-item {
@@ -319,9 +368,12 @@ body {
   animation: techFloat 4s ease-in-out infinite;
 }
 
+.tech-item:nth-child(1) { animation-delay: 0s; }
 .tech-item:nth-child(2) { animation-delay: -1s; }
 .tech-item:nth-child(3) { animation-delay: -2s; }
 .tech-item:nth-child(4) { animation-delay: -3s; }
+.tech-item:nth-child(5) { animation-delay: -4s; }
+.tech-item:nth-child(6) { animation-delay: -5s; }
 
 @keyframes techFloat {
   0%, 100% { transform: translateY(0); }
@@ -329,17 +381,15 @@ body {
 }
 
 /* About Page Styles */
-.about-page {
-  justify-content: space-between;
-  padding: 0 5rem;
-}
-
 .about-content {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 4rem;
   max-width: 1200px;
   width: 100%;
+  min-height: 100%;
+  padding-bottom: 4rem;
 }
 
 .hologram-container {
@@ -379,6 +429,11 @@ body {
   box-shadow: 0 0 50px var(--primary);
   opacity: 0.5;
   animation: glowPulse 2s ease-in-out infinite alternate;
+}
+
+@keyframes glowPulse {
+  0% { opacity: 0.3; }
+  100% { opacity: 0.7; }
 }
 
 .about-text {
@@ -427,13 +482,15 @@ body {
 }
 
 /* Projects Page Styles */
-.projects-page {
-  flex-direction: column;
-}
-
 .projects-container {
   max-width: 1200px;
   width: 100%;
+  min-height: 100%;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .projects-grid {
@@ -441,6 +498,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   margin-top: 3rem;
+  width: 100%;
 }
 
 .project-card {
@@ -515,19 +573,22 @@ body {
 }
 
 /* Contact Page Styles */
-.contact-page {
-  justify-content: center;
-}
-
 .contact-container {
   max-width: 1000px;
   width: 100%;
+  min-height: 100%;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
+  width: 100%;
 }
 
 .contact-methods {
@@ -630,14 +691,58 @@ body {
   left: 100%;
 }
 
-/* Page Indicator Styles */
-.page-indicator {
+/* Navigation Arrows */
+.page-navigation-arrows {
   position: fixed;
-  right: 2rem;
   top: 50%;
+  left: 0;
+  right: 0;
   transform: translateY(-50%);
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 1rem;
+  z-index: 90;
+  pointer-events: none;
+}
+
+.nav-arrow {
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--primary);
+  background: transparent;
+  color: var(--primary);
+  font-size: 1.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  pointer-events: all;
+  opacity: 0.8;
+}
+
+.nav-arrow:hover:not(.disabled) {
+  background: var(--primary);
+  color: var(--dark);
+  transform: scale(1.1);
+  box-shadow: 0 0 25px var(--primary);
+  opacity: 1;
+}
+
+.nav-arrow.disabled {
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+
+/* Page Indicator */
+.page-indicator {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
   gap: 1rem;
   z-index: 100;
 }
@@ -675,7 +780,7 @@ body {
   opacity: 0.3;
 }
 
-/* Audio Toggle Styles */
+/* Audio Toggle */
 .audio-toggle {
   position: fixed;
   bottom: 2rem;
@@ -708,30 +813,71 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .page {
+    padding: 1rem;
+    padding-top: 2rem;
+    padding-right: calc(1rem - 6px);
+  }
+  
   .hero-title {
     font-size: 2.5rem;
   }
   
   .about-content {
     flex-direction: column;
+    text-align: center;
+    gap: 2rem;
   }
   
   .contact-content {
     grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .nav-arrow {
+    width: 45px;
+    height: 45px;
+    font-size: 1.3rem;
   }
   
   .nav-links {
     display: none;
   }
   
-  .page {
-    padding: 1rem;
-  }
-  
-  .about-page {
-    padding: 0 1rem;
+  .page::-webkit-scrollbar {
+    width: 6px;
   }
 }
 
-
-
+@media (max-width: 480px) {
+  .page-navigation-arrows {
+    padding: 0 0.5rem;
+  }
+  
+  .nav-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+  
+  .page-indicator {
+    bottom: 1rem;
+  }
+  
+  .indicator-dot {
+    width: 10px;
+    height: 10px;
+  }
+  
+  .nav-container {
+    padding: 1rem;
+  }
+  
+  .logo-text {
+    font-size: 1.2rem;
+  }
+}
