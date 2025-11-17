@@ -11,7 +11,7 @@ const Home = ({ navigateToPage }) => {
         <span className="title-line">AUTOMATE</span>
       </h1>
       <p className="hero-subtitle">
-        Building the future, one automation at a time ( This is cringe🤮 i know, but i have to...please be impressed!!!!! )
+        Building the future, one automation at a time ( This is cringe i know, but i have to...please be impressed🥹!!!!! )
       </p>
       <div className="hero-cta">
         <button className="cta-button" onClick={() => navigateToPage(2)}>
@@ -27,6 +27,8 @@ const Home = ({ navigateToPage }) => {
         <div className="tech-item">PYTHON</div>
         <div className="tech-item">JAVASCRIPT</div>
         <div className="tech-item">POSTGRESQL</div>
+        <div className="tech-item">AI/ML</div>
+        <div className="tech-item">AI/ML</div>
         <div className="tech-item">AI/ML</div>
       </div>
     </div>

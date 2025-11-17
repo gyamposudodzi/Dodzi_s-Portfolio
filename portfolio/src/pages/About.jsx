@@ -32,7 +32,7 @@ const About = () => {
               <span className="skill">React</span>
               <span className="skill">Vue</span>
               <span className="skill">Three.js</span>
-              <span className="skill">TypeScript</span>
+              <span className="skill">Javascript</span>
             </div>
           </div>
           
@@ -40,7 +40,7 @@ const About = () => {
             <h3>Backend</h3>
             <div className="skills">
               <span className="skill">Node.js</span>
-              <span className="skill">GraphQL</span>
+              <span className="skill">Python</span>
               <span className="skill">WebSockets</span>
               <span className="skill">PostgreSQL</span>
             </div>

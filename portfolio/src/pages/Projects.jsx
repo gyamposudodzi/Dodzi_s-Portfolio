@@ -4,21 +4,21 @@ import React from 'react';
 const Projects = () => {
   const projects = [
     {
-      title: "Quantum Dashboard",
-      description: "Real-time data visualization platform",
-      tech: ["React", "D3.js", "WebGL"],
+      title: "TheFluc",
+      description: "An Article  writing platform",
+      tech: ["React", "Javascript", "Firebase", "Google Cloud"],
       glowColor: "var(--primary)"
     },
     {
-      title: "Neural Interface",
-      description: "AI-powered user experience system",
-      tech: ["TensorFlow", "Three.js", "WebRTC"],
+      title: "The Lazarus Project",
+      description: "Fully-Blown AI-Powered Trade Management System",
+      tech: ["FastAPI", "Electron", "Python", "React", "Postgresql"],
       glowColor: "var(--secondary)"
     },
     {
-      title: "Hologram OS",
-      description: "3D operating system interface",
-      tech: ["WebXR", "React Three Fiber", "GLSL"],
+      title: "MT5 AutoTraders V1 and V2",
+      description: "Automated Signals Generator and Trader for MT5",
+      tech: ["Python", "MT5", "Postgresql"],
       glowColor: "var(--accent)"
     }
   ];

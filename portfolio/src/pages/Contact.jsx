@@ -30,7 +30,7 @@ const Contact = () => {
           <div className="contact-method">
             <div className="method-icon">@</div>
             <h3>Email</h3>
-            <p>hello@nexus.dev</p>
+            <p>gyamposu@gmail.com</p>
           </div>
           
           <div className="contact-method">
