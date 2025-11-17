@@ -1,0 +1,111 @@
+/* src/styles/Projects.css */
+.projects-container {
+  max-width: 1200px;
+  width: 100%;
+  min-height: 100%;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(45deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.project-card {
+  position: relative;
+  background: rgba(10, 10, 20, 0.6);
+  border: 1px solid rgba(0, 243, 255, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--primary);
+  box-shadow: 0 10px 30px rgba(0, 243, 255, 0.2);
+}
+
+.project-image {
+  position: relative;
+  height: 200px;
+  background: linear-gradient(45deg, var(--darker), var(--dark));
+  overflow: hidden;
+}
+
+.project-glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: projectGlow 3s ease-in-out infinite;
+}
+
+@keyframes projectGlow {
+  0%, 100% { transform: translateX(-100%); }
+  50% { transform: translateX(100%); }
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-tech {
+  padding: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.project-tech span {
+  padding: 0.2rem 0.6rem;
+  background: rgba(255, 0, 200, 0.1);
+  border: 1px solid var(--secondary);
+  border-radius: 10px;
+  font-size: 0.7rem;
+  color: var(--secondary);
+}
+
+/* Responsive Projects Styles */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+}

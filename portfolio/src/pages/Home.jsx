@@ -1,5 +1,6 @@
 // src/pages/Home.jsx
 import React from 'react';
+import '../Styles/Home.css';
 
 const Home = ({ navigateToPage }) => {
   return (
