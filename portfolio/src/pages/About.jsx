@@ -10,7 +10,7 @@ const About = () => {
       <div className="about-header">
         <div className="avatar-section">
           <div className="avatar-container">
-            <img src={avatar} alt="Your Name" className="avatar" />
+            <img src={avatar} alt="Gyamposu Dodzi" className="avatar" />
             <div className="avatar-glow"></div>
           </div>
           <div className="avatar-info">
@@ -19,7 +19,7 @@ const About = () => {
               Building the Future, <span className="accent-text">One Line at a Time</span>
             </h2>
             <p className="section-subtitle">
-              Passionate full-stack developer specializing in creating innovative digital solutions 
+              Passionate backend developer specializing in creating innovative digital solutions 
               that bridge the gap between cutting-edge technology and user experience.
             </p>
           </div>
@@ -33,7 +33,7 @@ const About = () => {
             <div className="timeline-item">
               <div className="timeline-marker"></div>
               <div className="timeline-content">
-                <h4>Full-Stack Developer</h4>
+                <h4>Backend Developer @ TheFluc</h4>
                 <span className="timeline-date">2022 - Present</span>
                 <p>Building scalable web applications and automation systems for various clients and personal projects.</p>
               </div>
@@ -41,7 +41,7 @@ const About = () => {
             <div className="timeline-item">
               <div className="timeline-marker"></div>
               <div className="timeline-content">
-                <h4>AI & Automation Specialist</h4>
+                <h4>Open-Source Software Engineer(Appwrite) @ CODEDAY LABS</h4>
                 <span className="timeline-date">2021 - Present</span>
                 <p>Developing intelligent systems and automation solutions using machine learning and modern AI technologies.</p>
               </div>
