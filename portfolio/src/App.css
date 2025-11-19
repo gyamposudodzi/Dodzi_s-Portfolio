@@ -424,3 +424,139 @@ body {
     font-size: 1.2rem;
   }
 }
+
+
+
+
+
+/* === THEME VARIABLES === */
+
+[data-theme="light"] {
+  --primary: #0066cc;
+  --secondary: #cc00ff;
+  --accent: #00cc88;
+  --dark: #f0f2f5;
+  --darker: #ffffff;
+  --text: #1a1a1a;
+  --text-secondary: #666666;
+}
+
+/* === THEME TOGGLE STYLES === */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
+  color: var(--text);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 243, 255, 0.2);
+}
+
+.toggle-track {
+  position: relative;
+  width: 50px;
+  height: 24px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+[data-theme="light"] .toggle-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.toggle-thumb {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  transform: translateX(0);
+}
+
+[data-theme="light"] .toggle-thumb {
+  transform: translateX(26px);
+}
+
+.toggle-label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text);
+  min-width: 40px;
+}
+
+/* Light theme nav adjustments */
+[data-theme="light"] .nav-container {
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid rgba(0, 102, 204, 0.1);
+}
+
+[data-theme="light"] .grid-lines {
+  background-image: 
+    linear-gradient(rgba(0, 102, 204, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 102, 204, 0.1) 1px, transparent 1px);
+}
+
+[data-theme="light"] .shape {
+  opacity: 0.2;
+}
+
+[data-theme="light"] .particles {
+  background-image: radial-gradient(var(--primary) 1px, transparent 1px);
+  opacity: 0.05;
+}
+
+/* Smooth transitions */
+.app,
+.nav-container,
+.page,
+.artistic-card,
+.expandable-card {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .theme-toggle {
+    padding: 0.4rem 0.8rem;
+    gap: 0.6rem;
+  }
+  
+  .toggle-track {
+    width: 45px;
+    height: 22px;
+  }
+  
+  .toggle-thumb {
+    width: 18px;
+    height: 18px;
+  }
+  
+  [data-theme="light"] .toggle-thumb {
+    transform: translateX(23px);
+  }
+  
+  .toggle-label {
+    display: none;
+  }
+}

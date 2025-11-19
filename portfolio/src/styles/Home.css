@@ -171,3 +171,88 @@
   border: 1px solid #ff5722;
   animation-delay: -5s;
 }
+
+
+
+
+
+
+
+
+/* Add to src/styles/Home.css */
+[data-theme="light"] .split-layout {
+  background: transparent;
+}
+
+[data-theme="light"] .hero-badge {
+  background: rgba(0, 102, 204, 0.1);
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+[data-theme="light"] .hero-description {
+  color: var(--text-secondary);
+}
+
+[data-theme="light"] .accent-text {
+  color: var(--primary);
+}
+
+[data-theme="light"] .stat-number {
+  color: var(--primary);
+}
+
+[data-theme="light"] .stat-label {
+  color: var(--text-secondary);
+}
+
+[data-theme="light"] .cta-button {
+  border: 2px solid var(--primary);
+  color: var(--text);
+  background: transparent;
+}
+
+[data-theme="light"] .cta-button.primary {
+  background: var(--primary);
+  color: var(--darker);
+}
+
+[data-theme="light"] .cta-button:hover {
+  box-shadow: 0 10px 25px rgba(0, 102, 204, 0.3);
+}
+
+[data-theme="light"] .tech-orb.python {
+  background: rgba(255, 193, 7, 0.15);
+  border: 1px solid #ffc107;
+  color: #b38700;
+}
+
+[data-theme="light"] .tech-orb.react {
+  background: rgba(0, 102, 204, 0.15);
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+[data-theme="light"] .tech-orb.node {
+  background: rgba(0, 204, 136, 0.15);
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+[data-theme="light"] .tech-orb.ai {
+  background: rgba(204, 0, 255, 0.15);
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+}
+
+[data-theme="light"] .tech-orb.db {
+  background: rgba(170, 0, 255, 0.15);
+  border: 1px solid #aa00ff;
+  color: #aa00ff;
+}
+
+[data-theme="light"] .tech-orb.cloud {
+  background: rgba(255, 87, 34, 0.15);
+  border: 1px solid #ff5722;
+  color: #ff5722;
+}

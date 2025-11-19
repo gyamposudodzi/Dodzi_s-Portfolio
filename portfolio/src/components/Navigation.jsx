@@ -1,7 +1,8 @@
 // src/components/Navigation.jsx
 import React from 'react';
+import ThemeToggle from './ThemeToggle';
 
-const Navigation = ({ pages, currentPage, navigateToPage }) => {
+const Navigation = ({ pages, currentPage, navigateToPage, theme, toggleTheme }) => {
   return (
     <nav className="nav-container">
       <div className="logo">
@@ -21,6 +22,8 @@ const Navigation = ({ pages, currentPage, navigateToPage }) => {
           </button>
         ))}
       </div>
+      <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
+      
     </nav>
   );
 };

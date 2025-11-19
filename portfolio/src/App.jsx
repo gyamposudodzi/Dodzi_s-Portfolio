@@ -1,6 +1,5 @@
-// In your App.jsx, replace the useEffect and add navigation arrows:
-
-import React, { useState } from 'react';
+// src/App.jsx - FIXED VERSION
+import React, { useState, useEffect } from 'react';
 import './App.css';
 
 // Components
@@ -18,6 +17,25 @@ import Contact from './pages/Contact';
 const App = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
+  const [theme, setTheme] = useState('dark'); // Add theme state
+
+  // Theme initialization
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('portfolio-theme');
+    if (savedTheme) {
+      setTheme(savedTheme);
+    }
+  }, []);
+
+  // Apply theme to document
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('portfolio-theme', theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme(prevTheme => prevTheme === 'dark' ? 'light' : 'dark');
+  };
 
   const pages = [
     { id: 'home', title: 'Home', component: Home },
@@ -49,8 +67,6 @@ const App = () => {
     }
   };
 
-  // REMOVE the wheel navigation useEffect entirely
-
   return (
     <div className="app">
       <Background />
@@ -59,6 +75,8 @@ const App = () => {
         pages={pages}
         currentPage={currentPage}
         navigateToPage={navigateToPage}
+        theme={theme}
+        toggleTheme={toggleTheme}
       />
       
       <div className="main-content">
@@ -80,25 +98,22 @@ const App = () => {
         </div>
 
         {/* Navigation Arrows */}
-        // In your App.jsx, update the navigation arrows section:
-
-          {/* Navigation Arrows - Side Position */}
-          <div className="page-navigation-arrows side-arrows">
-            <button 
-              className={`nav-arrow prev side-arrow ${currentPage === 0 ? 'disabled' : ''}`}
-              onClick={goToPrevPage}
-              disabled={currentPage === 0}
-            >
-              ‹
-            </button>
-            <button 
-              className={`nav-arrow next side-arrow ${currentPage === pages.length - 1 ? 'disabled' : ''}`}
-              onClick={goToNextPage}
-              disabled={currentPage === pages.length - 1}
-            >
-              ›
-            </button>
-          </div>
+        <div className="page-navigation-arrows side-arrows">
+          <button 
+            className={`nav-arrow prev side-arrow ${currentPage === 0 ? 'disabled' : ''}`}
+            onClick={goToPrevPage}
+            disabled={currentPage === 0}
+          >
+            ‹
+          </button>
+          <button 
+            className={`nav-arrow next side-arrow ${currentPage === pages.length - 1 ? 'disabled' : ''}`}
+            onClick={goToNextPage}
+            disabled={currentPage === pages.length - 1}
+          >
+            ›
+          </button>
+        </div>
       </div>
 
       <PageIndicator 

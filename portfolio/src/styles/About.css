@@ -391,3 +391,114 @@
     width: 100%;
   }
 }
+
+
+
+
+
+
+
+
+
+
+/* Add to src/styles/About.css */
+[data-theme="light"] .timeline-layout {
+  background: transparent;
+}
+
+[data-theme="light"] .section-badge {
+  background: rgba(0, 102, 204, 0.1);
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+[data-theme="light"] .section-title {
+  background: linear-gradient(45deg, var(--text), var(--primary));
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+[data-theme="light"] .section-subtitle {
+  color: var(--text-secondary);
+}
+
+[data-theme="light"] .timeline::before {
+  background: linear-gradient(to bottom, var(--primary), var(--accent));
+}
+
+[data-theme="light"] .timeline-content h4 {
+  color: var(--text);
+}
+
+[data-theme="light"] .timeline-date {
+  color: var(--primary);
+}
+
+[data-theme="light"] .timeline-content p {
+  color: var(--text-secondary);
+}
+
+[data-theme="light"] .stat-card {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+[data-theme="light"] .stat-card:hover {
+  border-color: var(--primary);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+[data-theme="light"] .expertise-item {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="light"] .expertise-item:hover {
+  background: rgba(0, 102, 204, 0.1);
+  border-color: var(--primary);
+}
+
+[data-theme="light"] .expertise-content h5 {
+  color: var(--text);
+}
+
+[data-theme="light"] .expertise-content p {
+  color: var(--text-secondary);
+}
+
+[data-theme="light"] .skills-section {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .skill-category {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+[data-theme="light"] .skill-category:hover {
+  border-color: var(--primary);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+[data-theme="light"] .category-title {
+  color: var(--primary);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .skill-name {
+  color: var(--text);
+}
+
+[data-theme="light"] .skill-level {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .avatar {
+  border: 3px solid var(--primary);
+}
+
+[data-theme="light"] .avatar-glow {
+  background: radial-gradient(circle, var(--primary) 0%, transparent 70%);
+}

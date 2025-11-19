@@ -328,3 +328,119 @@
     font-size: 1.2rem;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+/* Add to src/styles/Contact.css */
+[data-theme="light"] .split-contact {
+  background: transparent;
+}
+
+[data-theme="light"] .contact-badge {
+  background: rgba(0, 102, 204, 0.1);
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+[data-theme="light"] .contact-title {
+  background: linear-gradient(45deg, var(--text), var(--primary));
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+[data-theme="light"] .contact-description {
+  color: var(--text-secondary);
+}
+
+[data-theme="light"] .contact-item {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+[data-theme="light"] .contact-item:hover {
+  border-color: var(--primary);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+[data-theme="light"] .contact-icon {
+  background: rgba(0, 102, 204, 0.1);
+}
+
+[data-theme="light"] .contact-detail h4 {
+  color: var(--text);
+}
+
+[data-theme="light"] .contact-detail p {
+  color: var(--primary);
+}
+
+[data-theme="light"] .contact-subtext {
+  color: var(--text-secondary);
+}
+
+[data-theme="light"] .social-connect h4 {
+  color: var(--text);
+}
+
+[data-theme="light"] .social-link {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: var(--text);
+  backdrop-filter: blur(10px);
+}
+
+[data-theme="light"] .social-link:hover {
+  border-color: var(--primary);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+[data-theme="light"] .contact-form-section {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+[data-theme="light"] .form-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .form-header h3 {
+  color: var(--text);
+}
+
+[data-theme="light"] .form-header p {
+  color: var(--text-secondary);
+}
+
+[data-theme="light"] .form-input {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: var(--text);
+}
+
+[data-theme="light"] .form-input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.1);
+}
+
+[data-theme="light"] .form-input::placeholder {
+  color: var(--text-secondary);
+}
+
+[data-theme="light"] .submit-button {
+  background: var(--primary);
+  color: var(--darker);
+}
+
+[data-theme="light"] .submit-button:hover:not(.submitting) {
+  box-shadow: 0 8px 20px rgba(0, 102, 204, 0.3);
+}
