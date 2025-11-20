@@ -19,8 +19,7 @@ const About = () => {
               Building the Future, <span className="accent-text">One Line at a Time</span>
             </h2>
             <p className="section-subtitle">
-              Passionate backend developer specializing in creating innovative digital solutions 
-              that bridge the gap between cutting-edge technology and user experience.
+              Backend engineer focused on building automated workflows, intelligent services, and AI-powered digital solutions that turn complex problems into simple, scalable experiences.
             </p>
           </div>
         </div>
@@ -34,24 +33,25 @@ const About = () => {
               <div className="timeline-marker"></div>
               <div className="timeline-content">
                 <h4>Backend Developer @ TheFluc</h4>
-                <span className="timeline-date">2022 - Present</span>
-                <p>Building scalable web applications and automation systems for various clients and personal projects.</p>
+                <span className="timeline-date">2025 - Present</span>
+                <p>Developed Firebase Cloud Functions that powered core application features, automated backend workflows, and ensured reliable communication between the frontend and Firestore. Also handled debugging and cloud infrastructure issues.
+</p>
               </div>
             </div>
             <div className="timeline-item">
               <div className="timeline-marker"></div>
               <div className="timeline-content">
-                <h4>Open-Source Software Engineer(Appwrite) @ CODEDAY LABS</h4>
-                <span className="timeline-date">2021 - Present</span>
-                <p>Developing intelligent systems and automation solutions using machine learning and modern AI technologies.</p>
+                <h4>Open-Source Software Engineering Intern (Appwrite) @ CODEDAY LABS</h4>
+                <span className="timeline-date">2023</span>
+                <p>Developed cloud functions that would help C# developers send messages through SMS, DISCORD, EMAIL, and X.</p>
               </div>
             </div>
             <div className="timeline-item">
               <div className="timeline-marker"></div>
               <div className="timeline-content">
-                <h4>Tech Journey Begins</h4>
-                <span className="timeline-date">2020</span>
-                <p>Started programming journey with Python, quickly expanding to full-stack web development and emerging technologies.</p>
+                <h4>Tech Journey Begins @ ALX and KIBO SCHOOL(woolf university)</h4>
+                <span className="timeline-date">2022</span>
+                <p>Started programming journey with C and Python</p>
               </div>
             </div>
           </div>
@@ -60,7 +60,7 @@ const About = () => {
         <div className="stats-section">
           <div className="stat-cards">
             <div className="stat-card">
-              <div className="stat-number">50+</div>
+              <div className="stat-number">5+</div>
               <div className="stat-label">Projects Completed</div>
             </div>
             <div className="stat-card">
@@ -68,11 +68,11 @@ const About = () => {
               <div className="stat-label">Years Experience</div>
             </div>
             <div className="stat-card">
-              <div className="stat-number">25+</div>
+              <div className="stat-number">10+</div>
               <div className="stat-label">Technologies</div>
             </div>
             <div className="stat-card">
-              <div className="stat-number">100%</div>
+              <div className="stat-number">200%</div>
               <div className="stat-label">Passion Driven</div>
             </div>
           </div>
@@ -123,7 +123,7 @@ const About = () => {
               <div className="skill-item">
                 <span className="skill-name">React</span>
                 <div className="skill-level">
-                  <div className="skill-bar" data-level="95"></div>
+                  <div className="skill-bar" data-level="80"></div>
                 </div>
               </div>
               <div className="skill-item">
@@ -135,7 +135,7 @@ const About = () => {
               <div className="skill-item">
                 <span className="skill-name">TypeScript</span>
                 <div className="skill-level">
-                  <div className="skill-bar" data-level="85"></div>
+                  <div className="skill-bar" data-level="10"></div>
                 </div>
               </div>
               <div className="skill-item">
@@ -147,7 +147,7 @@ const About = () => {
               <div className="skill-item">
                 <span className="skill-name">Vue.js</span>
                 <div className="skill-level">
-                  <div className="skill-bar" data-level="75"></div>
+                  <div className="skill-bar" data-level="10"></div>
                 </div>
               </div>
             </div>
@@ -165,19 +165,19 @@ const About = () => {
               <div className="skill-item">
                 <span className="skill-name">Python</span>
                 <div className="skill-level">
-                  <div className="skill-bar" data-level="88"></div>
+                  <div className="skill-bar" data-level="90"></div>
                 </div>
               </div>
               <div className="skill-item">
                 <span className="skill-name">PostgreSQL</span>
                 <div className="skill-level">
-                  <div className="skill-bar" data-level="85"></div>
+                  <div className="skill-bar" data-level="75"></div>
                 </div>
               </div>
               <div className="skill-item">
                 <span className="skill-name">MongoDB</span>
                 <div className="skill-level">
-                  <div className="skill-bar" data-level="80"></div>
+                  <div className="skill-bar" data-level="60"></div>
                 </div>
               </div>
               <div className="skill-item">
@@ -205,15 +205,15 @@ const About = () => {
                 </div>
               </div>
               <div className="skill-item">
-                <span className="skill-name">AWS</span>
+                <span className="skill-name">Google Cloud</span>
                 <div className="skill-level">
-                  <div className="skill-bar" data-level="70"></div>
+                  <div className="skill-bar" data-level="60"></div>
                 </div>
               </div>
               <div className="skill-item">
                 <span className="skill-name">WebSockets</span>
                 <div className="skill-level">
-                  <div className="skill-bar" data-level="85"></div>
+                  <div className="skill-bar" data-level="60"></div>
                 </div>
               </div>
               <div className="skill-item">
@@ -231,13 +231,13 @@ const About = () => {
               <div className="skill-item">
                 <span className="skill-name">AI/ML</span>
                 <div className="skill-level">
-                  <div className="skill-bar" data-level="75"></div>
+                  <div className="skill-bar" data-level="70"></div>
                 </div>
               </div>
               <div className="skill-item">
                 <span className="skill-name">WebGL</span>
                 <div className="skill-level">
-                  <div className="skill-bar" data-level="70"></div>
+                  <div className="skill-bar" data-level="30"></div>
                 </div>
               </div>
               <div className="skill-item">
@@ -249,13 +249,13 @@ const About = () => {
               <div className="skill-item">
                 <span className="skill-name">AR/VR</span>
                 <div className="skill-level">
-                  <div className="skill-bar" data-level="60"></div>
+                  <div className="skill-bar" data-level="30"></div>
                 </div>
               </div>
               <div className="skill-item">
                 <span className="skill-name">Three.js</span>
                 <div className="skill-level">
-                  <div className="skill-bar" data-level="70"></div>
+                  <div className="skill-bar" data-level="30"></div>
                 </div>
               </div>
             </div>

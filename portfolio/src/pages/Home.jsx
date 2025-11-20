@@ -16,7 +16,7 @@ const Home = ({ navigateToPage }) => {
         <p className="hero-description">
           I build <span className="accent-text">scalable applications</span> and 
           <span className="accent-text"> intelligent automation</span> systems. 
-          Specializing in modern web/Desktop technologies and AI integration.
+          Specializing in modern Web/Desktop technologies and AI integration.
         </p>
         <div className="hero-stats">
           <div className="stat">
