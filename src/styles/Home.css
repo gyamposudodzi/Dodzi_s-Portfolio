@@ -6,6 +6,7 @@
   align-items: center;
   max-width: 1400px;
   width: 80%;
+  min-height: 100%;
 }
 
 .split-left {
@@ -91,6 +92,7 @@
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease;
+  flex-shrink: 0;
 }
 
 .cta-button.primary {
@@ -122,6 +124,7 @@
   font-size: 0.9rem;
   font-weight: 600;
   animation: float 6s ease-in-out infinite;
+  white-space: nowrap;
 }
 
 .tech-orb.python {
@@ -172,14 +175,220 @@
   animation-delay: -5s;
 }
 
+/* ===== MOBILE RESPONSIVE DESIGN ===== */
 
+/* Tablet Devices (768px and below) */
+@media (max-width: 768px) {
+  .split-layout {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    width: 90%;
+    padding: 1rem 0;
+  }
 
+  .split-left {
+    gap: 1.5rem;
+    text-align: center;
+    align-items: center;
+  }
 
+  .hero-badge {
+    margin: 0 auto;
+  }
 
+  .hero-title {
+    font-size: 2.8rem;
+  }
 
+  .hero-description {
+    font-size: 1.1rem;
+    max-width: 500px;
+  }
 
+  .hero-stats {
+    justify-content: center;
+    gap: 1.5rem;
+  }
 
-/* Add to src/styles/Home.css */
+  .stat {
+    align-items: center;
+  }
+
+  .stat-number {
+    font-size: 1.8rem;
+  }
+
+  .hero-cta {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .cta-button {
+    padding: 0.9rem 1.8rem;
+    font-size: 0.95rem;
+  }
+
+  .floating-tech {
+    width: 300px;
+    height: 300px;
+  }
+
+  .tech-orb {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+  .split-layout {
+    width: 95%;
+    gap: 2rem;
+    padding: 0.5rem 0;
+  }
+
+  .split-left {
+    gap: 1.2rem;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .hero-stats {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .stat {
+    min-width: 80px;
+  }
+
+  .stat-number {
+    font-size: 1.6rem;
+  }
+
+  .stat-label {
+    font-size: 0.8rem;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    width: 100%;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cta-button {
+    width: 100%;
+    justify-content: center;
+    padding: 0.9rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .floating-tech {
+    width: 250px;
+    height: 250px;
+  }
+
+  .tech-orb {
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+  }
+
+  /* Adjust tech orb positions for smaller screen */
+  .tech-orb.python {
+    top: 8%;
+    left: 15%;
+  }
+
+  .tech-orb.react {
+    top: 55%;
+    left: 8%;
+  }
+
+  .tech-orb.node {
+    top: 25%;
+    right: 15%;
+  }
+
+  .tech-orb.ai {
+    top: 65%;
+    right: 8%;
+  }
+
+  .tech-orb.db {
+    top: 40%;
+    left: 3%;
+  }
+
+  .tech-orb.cloud {
+    top: 12%;
+    right: 3%;
+  }
+}
+
+/* Small Mobile Devices (360px and below) */
+@media (max-width: 360px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-description {
+    font-size: 0.9rem;
+  }
+
+  .hero-stats {
+    gap: 0.8rem;
+  }
+
+  .stat-number {
+    font-size: 1.4rem;
+  }
+
+  .floating-tech {
+    width: 220px;
+    height: 220px;
+  }
+
+  .tech-orb {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.7rem;
+  }
+}
+
+/* Landscape Mobile Optimization */
+@media (max-height: 500px) and (orientation: landscape) {
+  .split-layout {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .split-left {
+    gap: 1rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-description {
+    font-size: 0.9rem;
+  }
+
+  .floating-tech {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* Light Mode Mobile Optimizations */
 [data-theme="light"] .split-layout {
   background: transparent;
 }

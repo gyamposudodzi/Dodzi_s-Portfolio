@@ -8,25 +8,11 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "TheFluc",
-      shortDesc: "AI-Powered Writing Platform",
-      fullDesc: "A revolutionary article writing platform that combines real-time collaboration with AI-powered content generation. Features include advanced markdown support, version control, team management, and seamless publishing workflow.",
-      tech: ["React", "JavaScript", "Firebase", "Google Cloud", "OpenAI API", "Node.js"],
-      github: "https://github.com/yourusername/thefluc",
-      live: "https://thefluc.com",
-      status: "Live",
-      category: "Web Platform",
-      glowColor: "var(--primary)",
-      features: ["Real-time Collaboration", "AI Content Generation", "Team Management", "Version Control"],
-      metrics: ["98% Uptime", "2K+ Users", "50ms Response"]
-    },
-    {
-      id: 2,
       title: "The Lazarus Project",
       shortDesc: "Advanced Trading System",
       fullDesc: "A comprehensive AI-powered trading management system featuring machine learning algorithms for market prediction, advanced risk management, and automated execution across multiple exchanges.",
       tech: ["FastAPI", "Electron", "Python", "React", "PostgreSQL", "TensorFlow"],
-      github: "https://github.com/yourusername/lazarus",
+      github: "https://github.com/gyamposudodzi/The_Lazarus_Project",
       live: null,
       status: "In Development",
       category: "Desktop Application",
@@ -35,18 +21,74 @@ const Projects = () => {
       metrics: ["95% Accuracy", "10ms Latency", "24/7 Monitoring"]
     },
     {
+      id: 2,
+      title: "TheFluc",
+      shortDesc: "AI-Powered Writing Platform",
+      fullDesc: "A revolutionary article writing platform that combines real-time collaboration with AI-powered content generation. Features include advanced markdown support, version control, team management, and seamless publishing workflow.",
+      tech: ["React", "JavaScript", "Firebase", "Google Cloud", "OpenAI API", "Node.js"],
+      github: "https://github.com/The-African-Wave",
+      live: "https://thefluc.com",
+      status: "Live",
+      category: "Web Platform",
+      glowColor: "var(--primary)",
+      features: ["Real-time Collaboration", "AI Content Generation", "Team Management", "Version Control"],
+      metrics: ["98% Uptime", "2K+ Users", "50ms Response"]
+    },
+    {
       id: 3,
-      title: "MT5 AutoTraders",
+      title: "Arbitrage Bot",
+      shortDesc: "Arbitrage monitoring and trading bot",
+      fullDesc: "A comprehensive bot that monitors price differences across multiple cryptocurrency exchanges and executes arbitrage trades automatically to capitalize on market inefficiencies.",
+      tech: ["Python", "Mt5", "PostgreSQL", "TensorFlow"],
+      github: "https://github.com/gyamposudodzi/Arbitrage-Bot",
+      live: null,
+      status: "In Development",
+      category: "CLI Application",
+      glowColor: "var(--secondary)",
+      features: ["Multi-Exchange monitoring", "Paper Trading", "Logging & Analytics", "Automated Trade Execution"],
+      metrics: ["95% Accuracy", "24/7 Monitoring"]
+    },
+    {
+      id: 4,
+      title: "MT5 AutoTrader Version 1.0",
       shortDesc: "Automated Trading Solutions",
-      fullDesc: "Sophisticated automated trading solutions for MetaTrader 5 featuring advanced backtesting capabilities, real-time market analysis, and machine learning-based signal generation.",
+      fullDesc: "Sophisticated automated trading solutions for MetaTrader 5 platform, featuring a multi-indicator signal generatorfor XAUUSD trading, complete with real-time trade execution and monitoring.",
       tech: ["Python", "MT5", "PostgreSQL", "Machine Learning", "Data Analysis", "Docker"],
-      github: "https://github.com/yourusername/mt5-autotraders",
+      github: "https://github.com/gyamposudodzi/Lazarus-MT5-Trader-Version-1-",
       live: null,
       status: "Completed",
-      category: "Trading Automation",
+      category: "Trading Automation - XAUUSD CLI-App",
       glowColor: "var(--accent)",
-      features: ["Backtesting Engine", "ML Signals", "Real-time Analysis", "Strategy Optimization"],
-      metrics: ["99.9% Reliability", "1M+ Trades", "0.1s Execution"]
+      features: ["Backtesting Engine", "Combined Indicator Signals", , "Trade Execution and Monitoring"],
+      metrics: ["11% profitability", "100+ Trades", "0.1s Execution"]
+    },
+    {
+      id: 5,
+      title: "MT5 AutoTrader Version 2.0",
+      shortDesc: "Automated Trading Solutions",
+      fullDesc: "Sophisticated automated trading solutions for MetaTrader 5 platform, featuring a multi-indicator signal generator for instruments apart from XAUUSD, complete with real-time trade execution and monitoring.",
+      tech: ["Python", "MT5", "PostgreSQL", "Machine Learning", "Data Analysis", "Docker"],
+      github: "https://github.com/gyamposudodzi/Lazarus-MT5-Trader-Version-2-",
+      live: null,
+      status: "Completed",
+      category: "Trading Automation CLI-App",
+      glowColor: "var(--secondary)",
+      features: ["Backtesting Engine", "Combined Indicator Signals", , "Trade Execution and Monitoring"],
+      metrics: ["15% profitability", "100+ Trades", "0.1s Execution"]
+    },
+    {
+      id: 6,
+      title: "Pandoras Box",
+      shortDesc: "My Personal Trading Tools Testing Box",
+      fullDesc: "This is where i place all the tools that i program for my trading activities for testing before deploying them to my main trading system. It contains workable scripts and non workable scripts for MT5 platform and other",
+      tech: ["Python", "MT5", "PostgreSQL", "Firebase", "Data Analysis", "Firestore"],
+      github: "https://github.com/gyamposudodzi/pandora-s-box",
+      live: null,
+      status: "In Development",
+      category: "Script Repository",
+      glowColor: "var(--primary)",
+      features: ["Backtesting Engine", "Market Watch", "Monitoring", "Market Calculations"],
+      metrics: ["Contains multiple scripts", "80% workable scripts",]
     }
   ];
 

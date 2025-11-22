@@ -11,7 +11,7 @@ const Home = ({ navigateToPage }) => {
         </div>
         <h1 className="hero-title">
           <span className="title-gradient">BACKEND</span>
-          <span className="title-gradient">DEVELOPER</span>
+          <span className="title-gradient">ENGINEER</span>
         </h1>
         <p className="hero-description">
           I build <span className="accent-text">scalable applications</span> and 

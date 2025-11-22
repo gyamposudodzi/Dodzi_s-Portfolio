@@ -312,7 +312,7 @@ body {
 .indicator-dot {
   width: 12px;
   height: 12px;
-  border: none;
+  border: 1px solid var(--primary);
   background: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   cursor: pointer;
@@ -435,8 +435,8 @@ body {
   --primary: #0066cc;
   --secondary: #cc00ff;
   --accent: #00cc88;
-  --dark: #f0f2f5;
-  --darker: #ffffff;
+  --dark: #f0f2f5d8;
+  --darker: #ffffffbb;
   --text: #1a1a1a;
   --text-secondary: #666666;
 }

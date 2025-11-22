@@ -41,6 +41,14 @@ const About = () => {
             <div className="timeline-item">
               <div className="timeline-marker"></div>
               <div className="timeline-content">
+                <h4>University Of the People</h4>
+                <span className="timeline-date">2025-Present</span>
+                <p>Bachelors of Science, Computer Science</p>
+              </div>
+            </div>
+            <div className="timeline-item">
+              <div className="timeline-marker"></div>
+              <div className="timeline-content">
                 <h4>Open-Source Software Engineering Intern (Appwrite) @ CODEDAY LABS</h4>
                 <span className="timeline-date">2023</span>
                 <p>Developed cloud functions that would help C# developers send messages through SMS, DISCORD, EMAIL, and X.</p>
@@ -49,9 +57,17 @@ const About = () => {
             <div className="timeline-item">
               <div className="timeline-marker"></div>
               <div className="timeline-content">
-                <h4>Tech Journey Begins @ ALX and KIBO SCHOOL(woolf university)</h4>
+                <h4>KIBO SCHOOL(woolf university)</h4>
                 <span className="timeline-date">2022</span>
-                <p>Started programming journey with C and Python</p>
+                <p>Higher Diploma In Computer Science</p>
+              </div>
+            </div>
+            <div className="timeline-item">
+              <div className="timeline-marker"></div>
+              <div className="timeline-content">
+                <h4>KIBO SCHOOL - TRYKIBO PROGRAM </h4>
+                <span className="timeline-date">2022</span>
+                <p>Future Proof with Python, Learnt about the basics of python programming language</p>
               </div>
             </div>
           </div>
@@ -83,29 +99,29 @@ const About = () => {
               <div className="expertise-item">
                 <div className="expertise-icon">⚡</div>
                 <div className="expertise-content">
-                  <h5>Fast Performance</h5>
-                  <p>Optimized, lightning-fast applications</p>
+                  <h5>Strong Programming Foundation</h5>
+                  <p>I write clean, efficient and scalable code applying solid programming principles, data structures and algorithms to solve problems</p>
                 </div>
               </div>
               <div className="expertise-item">
                 <div className="expertise-icon">🔒</div>
                 <div className="expertise-content">
-                  <h5>Secure</h5>
-                  <p>Robust security practices</p>
+                  <h5>Security And Authentication</h5>
+                  <p>I implement secure authentication, authorization and data-protection standards to ensure system integrity and user safety</p>
                 </div>
               </div>
               <div className="expertise-item">
                 <div className="expertise-icon">🚀</div>
                 <div className="expertise-content">
-                  <h5>Scalable</h5>
-                  <p>Growth-ready architecture</p>
+                  <h5>API And Server Development</h5>
+                  <p>I build clean, scalable and secure backend APIs using modern frameworks, ensuring fast and reliable communications between systems</p>
                 </div>
               </div>
               <div className="expertise-item">
                 <div className="expertise-icon">🎯</div>
                 <div className="expertise-content">
-                  <h5>Precise</h5>
-                  <p>Attention to detail</p>
+                  <h5>Database Design And Optimization</h5>
+                  <p>I design efficient database schemas and write optimized queries that handle large scale data with high performance</p>
                 </div>
               </div>
             </div>
@@ -133,21 +149,9 @@ const About = () => {
                 </div>
               </div>
               <div className="skill-item">
-                <span className="skill-name">TypeScript</span>
-                <div className="skill-level">
-                  <div className="skill-bar" data-level="10"></div>
-                </div>
-              </div>
-              <div className="skill-item">
                 <span className="skill-name">HTML/CSS</span>
                 <div className="skill-level">
                   <div className="skill-bar" data-level="95"></div>
-                </div>
-              </div>
-              <div className="skill-item">
-                <span className="skill-name">Vue.js</span>
-                <div className="skill-level">
-                  <div className="skill-bar" data-level="10"></div>
                 </div>
               </div>
             </div>
@@ -165,7 +169,13 @@ const About = () => {
               <div className="skill-item">
                 <span className="skill-name">Python</span>
                 <div className="skill-level">
-                  <div className="skill-bar" data-level="90"></div>
+                  <div className="skill-bar" data-level="95"></div>
+                </div>
+              </div>
+              <div className="skill-item">
+                <span className="skill-name">FastAPI/Flask/Django</span>
+                <div className="skill-level">
+                  <div className="skill-bar" data-level="80"></div>
                 </div>
               </div>
               <div className="skill-item">
@@ -222,6 +232,12 @@ const About = () => {
                   <div className="skill-bar" data-level="80"></div>
                 </div>
               </div>
+              <div className="skill-item">
+                <span className="skill-name">Kubernetes</span>
+                <div className="skill-level">
+                  <div className="skill-bar" data-level="60"></div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -235,27 +251,9 @@ const About = () => {
                 </div>
               </div>
               <div className="skill-item">
-                <span className="skill-name">WebGL</span>
-                <div className="skill-level">
-                  <div className="skill-bar" data-level="30"></div>
-                </div>
-              </div>
-              <div className="skill-item">
                 <span className="skill-name">Blockchain</span>
                 <div className="skill-level">
                   <div className="skill-bar" data-level="65"></div>
-                </div>
-              </div>
-              <div className="skill-item">
-                <span className="skill-name">AR/VR</span>
-                <div className="skill-level">
-                  <div className="skill-bar" data-level="30"></div>
-                </div>
-              </div>
-              <div className="skill-item">
-                <span className="skill-name">Three.js</span>
-                <div className="skill-level">
-                  <div className="skill-bar" data-level="30"></div>
                 </div>
               </div>
             </div>
