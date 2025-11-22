@@ -78,7 +78,7 @@ const Contact = () => {
         <div className="social-connect">
           <h4>Follow My Journey</h4>
           <div className="social-links">
-            <a href="https://linkedin.com/dodzigyamposu" className="social-link">
+            <a href="https://www.linkedin.com/in/dodzigyamposu/" className="social-link">
               <span className="social-icon">💼</span>
               <span>LinkedIn</span>
             </a>
