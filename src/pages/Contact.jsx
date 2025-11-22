@@ -78,21 +78,17 @@ const Contact = () => {
         <div className="social-connect">
           <h4>Follow My Journey</h4>
           <div className="social-links">
-            <a href="#" className="social-link">
+            <a href="https://linkedin.com/dodzigyamposu" className="social-link">
               <span className="social-icon">💼</span>
               <span>LinkedIn</span>
             </a>
-            <a href="#" className="social-link">
+            <a href="https://github.com/gyamposudodzi" className="social-link">
               <span className="social-icon">🐙</span>
               <span>GitHub</span>
             </a>
-            <a href="#" className="social-link">
+            <a href="https://x.com/gyamposu_dodzi?t=51yCMamkEA5oV5xtjw86mQ&s=09" className="social-link">
               <span className="social-icon">🐦</span>
               <span>Twitter</span>
-            </a>
-            <a href="#" className="social-link">
-              <span className="social-icon">📸</span>
-              <span>Instagram</span>
             </a>
           </div>
         </div>
