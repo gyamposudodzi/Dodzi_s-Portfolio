@@ -435,8 +435,8 @@ body {
   --primary: #0066cc;
   --secondary: #cc00ff;
   --accent: #00cc88;
-  --dark: #f0f2f5d8;
-  --darker: #ffffffbb;
+  --dark:rgba(240, 242, 245, 0.98);
+  --darker:rgba(255, 255, 255, 0.96);
   --text: #1a1a1a;
   --text-secondary: #666666;
 }
